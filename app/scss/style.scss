@@ -4,6 +4,12 @@
 @import "global";
 
 .header {
+
+  &__container {
+    overflow: hidden;
+  }
+
+
   background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
   min-height: 100vh;
   &__top {

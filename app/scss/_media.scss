@@ -150,7 +150,6 @@
     position: relative;
   }
 
-
   .nav {
     position: absolute;
     right: 0;
@@ -231,20 +230,15 @@
       }
     }
     &._active::before {
-      top:50%;
+      top: 50%;
       transform: rotate(-45deg) translate(0px, -50%);
-      
     }
     &._active::after {
       width: 100%;
       bottom: 50%;
       transform: rotate(45deg) translate(0px, 50%);
-      
     }
-
   }
-
-
 
   .header__screen img {
     width: 60%;
@@ -253,15 +247,49 @@
 }
 
 @media (max-width: 767px) {
+  .header__title {
+    padding: 0 90px;
+  }
+
+  .header__descr {
+    padding: 0 130px;
+  }
+
+  .process__title {
+    padding: 0 90px;
+    text-align: left;
+  }
+
+  .process__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    padding: 0 90px;
+  }
+
   .process__buttons--adaptive {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .process__buttons--adaptive button {
-    width: 100%;
+  .process__image {
+    margin-bottom: 60px;
   }
+
+  .process__buttons--adaptive button {
+    padding: 15px 100px;
+  }
+
+  .hr__title {
+    padding: 0 90px;
+  }
+
+  .hr__text {
+    padding: 0 90px;
+  }
+
 
   .sign-button {
     margin: 0 0 22px 0;
@@ -276,6 +304,14 @@
     padding: 25px 85px;
   }
 
+  .tariffs__title {
+    padding: 0 90px;
+  }
+
+  .tariffs__text {
+    padding: 0 115px;
+  }
+
   .subscribe__email {
     display: flex;
     flex-direction: column;
@@ -285,9 +321,12 @@
   .subscribe__email input {
     margin-right: 0;
     margin-bottom: 12px;
+    padding: 12px 5px;
+    text-align: center;
   }
   .subscribe__email button {
     border-radius: 6px;
+    text-transform: none;
   }
 }
 
@@ -303,5 +342,4 @@
   .burger-menu {
     margin-left: auto;
   }
-
 }
